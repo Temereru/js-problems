@@ -1,4 +1,4 @@
-var num = 204321;
+var num = 2043212;
 counter = 0;
 var newNum;
 num += "";
@@ -9,7 +9,7 @@ for(i = 0; i < num.length ; i++)
 		newNum = num.slice(0,i+1) + "-" + num.slice(i+1)
 		counter ++;
 	}
-	else if(!(num[i] % 2) && !(num[i+1] % 2))
+	else if(!(num[i] % 2) && !(num[i+1] % 2) && num[i+1] != null)
 	{
 		newNum = newNum.slice(0,i+1+counter) + "-" + newNum.slice(i+1+counter)
 		counter ++;
